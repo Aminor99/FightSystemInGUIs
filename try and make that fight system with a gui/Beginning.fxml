@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="originalRootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeginningController">
+   <children>
+      <Label layoutX="48.0" layoutY="14.0" prefHeight="65.0" prefWidth="373.0" text="Welcome to the Fight!">
+         <font>
+            <Font name="Baskerville Old Face" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="97.0" prefHeight="36.0" prefWidth="220.0" text="What will you name your character?">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputName" alignment="TOP_LEFT" layoutX="291.0" layoutY="102.0" promptText="input name here" />
+      <Button fx:id="enterBattleButton" layoutX="185.0" layoutY="155.0" mnemonicParsing="false" onAction="#enterBattleButtonListener" prefHeight="25.0" prefWidth="130.0" text="Choose Your Class" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="chooseItemPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseItemController">
+   <children>
+      <ImageView fx:id="outputItemImage" fitHeight="150.0" fitWidth="180.0" layoutX="293.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="outputItemDescription" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="169.0" prefHeight="57.0" prefWidth="180.0" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="14.0" layoutY="17.0" prefHeight="17.0" prefWidth="75.0" text="Item">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="17.0" text="Quantity">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="potionRadioButton" layoutX="8.0" layoutY="50.0" mnemonicParsing="false" onAction="#potionListener" text="Potion">
+         <toggleGroup>
+            <ToggleGroup fx:id="itemGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="greaterPotionRadioButton" layoutX="8.0" layoutY="75.0" mnemonicParsing="false" onAction="#greaterPotionListener" text="Greater Potion" toggleGroup="$itemGroup" />
+      <RadioButton fx:id="panaceaRadioButton" layoutX="8.0" layoutY="100.0" mnemonicParsing="false" onAction="#panaceaListener" text="Panacea" toggleGroup="$itemGroup" />
+      <RadioButton fx:id="tonicRadioButton" layoutX="8.0" layoutY="125.0" mnemonicParsing="false" onAction="#tonicListener" text="Tonic" toggleGroup="$itemGroup" />
+      <RadioButton fx:id="greaterTonicRadioButton" layoutX="8.0" layoutY="150.0" mnemonicParsing="false" onAction="#greaterTonicListener" text="Greater Tonic" toggleGroup="$itemGroup" />
+      <RadioButton fx:id="elixerRadioButton" layoutX="8.0" layoutY="175.0" mnemonicParsing="false" onAction="#elixerListener" text="Elixer" toggleGroup="$itemGroup" />
+      <Label fx:id="outputPotionQuantity" alignment="CENTER" layoutX="174.0" layoutY="50.0" prefWidth="28.0" />
+      <Label fx:id="outputGreaterPotionQuantity" alignment="CENTER" layoutX="174.0" layoutY="75.0" prefHeight="17.0" prefWidth="28.0" />
+      <Label fx:id="outputPanaceaQuantity" alignment="CENTER" layoutX="174.0" layoutY="100.0" prefWidth="28.0" />
+      <Label fx:id="outputTonicQuantity" alignment="CENTER" layoutX="174.0" layoutY="125.0" prefWidth="28.0" />
+      <Label fx:id="outputGreaterTonicQuantity" alignment="CENTER" layoutX="174.0" layoutY="150.0" prefWidth="28.0" />
+      <Label fx:id="outputElixerQuantity" alignment="CENTER" layoutX="174.0" layoutY="175.0" prefWidth="28.0" />
+      <Button fx:id="chooseItemButton" layoutX="75.0" layoutY="197.0" mnemonicParsing="false" onAction="#chooseItemButtonListener" text="Choose Item" />
+   </children>
+</AnchorPane>

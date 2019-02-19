@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="gameOverPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="133.0" layoutY="38.0" prefHeight="69.0" prefWidth="234.0" text="GAME OVER" textAlignment="CENTER">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="startOverButton" layoutX="98.0" layoutY="132.0" mnemonicParsing="false" text="Start Over" />
+      <Button fx:id="quitButton" layoutX="348.0" layoutY="132.0" mnemonicParsing="false" text="Quit" />
+   </children>
+</AnchorPane>

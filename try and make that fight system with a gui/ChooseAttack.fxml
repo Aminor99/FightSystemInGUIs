@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="chooseAttackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseAttackController">
+   <children>
+      <Label fx:id="outputWhoAttacksFirst" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="14.0" prefHeight="33.0" prefWidth="354.0" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="outputAttackInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="47.0" prefHeight="17.0" prefWidth="355.0" />
+      <Label fx:id="outputWhoAttacksSecond" alignment="CENTER" layoutX="68.0" layoutY="163.0" prefHeight="17.0" prefWidth="355.0" />
+      <Button fx:id="nextButton" layoutX="225.0" layoutY="193.0" mnemonicParsing="false" onAction="#nextButtonListener" text="Next" />
+      <ImageView fx:id="outputFirstAttackerImage" fitHeight="88.0" fitWidth="100.0" layoutX="95.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="outputSecondAttackerImage" fitHeight="88.0" fitWidth="100.0" layoutX="305.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

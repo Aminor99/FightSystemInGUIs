@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="statsScreenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowStatsController">
+   <children>
+      <Button fx:id="toTheBattleButton" layoutX="322.0" layoutY="200.0" mnemonicParsing="false" onAction="#toBattleButtonListener" text="To the Battle!" />
+      <Label layoutX="36.0" layoutY="25.0" text="Your Stats">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="6.0" prefHeight="38.0" prefWidth="66.0" text="Name:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="32.0" prefHeight="30.0" prefWidth="56.0" text="Class:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="outputHP" alignment="CENTER" layoutX="31.0" layoutY="80.0" prefHeight="20.0" prefWidth="180.0" />
+      <Label fx:id="outputAttack" alignment="CENTER" layoutX="31.0" layoutY="110.0" prefHeight="20.0" prefWidth="180.0" />
+      <Label fx:id="outputMagicAttack" alignment="CENTER" layoutX="31.0" layoutY="140.0" prefHeight="20.0" prefWidth="180.0" />
+      <Label fx:id="outputMana" alignment="CENTER" layoutX="31.0" layoutY="170.0" prefHeight="20.0" prefWidth="180.0" />
+      <Label fx:id="outputDefense" alignment="CENTER" layoutX="31.0" layoutY="200.0" prefHeight="20.0" prefWidth="180.0" />
+      <Label fx:id="outputName" layoutX="296.0" layoutY="6.0" prefHeight="25.0" prefWidth="181.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="outputClass" layoutX="296.0" layoutY="32.0" prefHeight="17.0" prefWidth="181.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="outputPortraitImage" fitHeight="140.0" fitWidth="150.0" layoutX="290.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
